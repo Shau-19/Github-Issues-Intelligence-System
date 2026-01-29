@@ -1,0 +1,5 @@
+outs:
+- md5: 27cb24005053092bc6297bdf851d8e55
+  size: 87319
+  hash: md5
+  path: kmeans_multimodal.pkl
