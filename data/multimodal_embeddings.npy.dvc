@@ -1,5 +1,5 @@
 outs:
-- md5: 48a01313b4aa4f2a97c44f733c666f82
-  size: 31096704
+- md5: 68e0c9b6736cd0f6a98b9693ff139848
+  size: 31237824
   hash: md5
   path: multimodal_embeddings.npy
