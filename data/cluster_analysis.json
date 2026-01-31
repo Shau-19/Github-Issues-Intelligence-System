@@ -1,0 +1,287 @@
+{
+  "0": {
+    "name": "General Issues",
+    "size": 3006,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.0,
+      "avg_complexity": 0.07235528942115768,
+      "avg_text_length": 159.64337990685297,
+      "avg_severity": 0.0,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "concept art for the otherworld",
+      "function to drop graph store and edge store, but not definitions",
+      "how do i use include foundation",
+      "save the kingdom",
+      "does not restore notifications after phone reboot and even after starting app"
+    ]
+  },
+  "1": {
+    "name": "Critical Errors & Crashes",
+    "size": 359,
+    "features": {
+      "has_error": 0.9860724233983287,
+      "has_question": 0.3565459610027855,
+      "avg_complexity": 4.256267409470752,
+      "avg_text_length": 1291.9888579387186,
+      "avg_severity": 1.8551532033426184,
+      "has_image": 0.04178272980501393
+    },
+    "sample_titles": [
+      "query engine may produce gigantic queries which lucene can't handle",
+      "404 error - nuget.exe not recognized error on some build servers",
+      "fetch without setting -r fails on hbsd",
+      "internal error: trying to obtain autocopy for ... , which defines none",
+      "pygpu.test is broken in v0.6.6"
+    ]
+  },
+  "2": {
+    "name": "User Questions & Help Requests",
+    "size": 1455,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 1.0,
+      "avg_complexity": 0.5773195876288659,
+      "avg_text_length": 299.31134020618555,
+      "avg_severity": 0.07147766323024055,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "manually entered dates issues",
+      "mousearea and touch event in mobile browser",
+      "rest api ajax calls",
+      "changing the status of the discord bot",
+      "double check chunks creation"
+    ]
+  },
+  "3": {
+    "name": "Complex Technical Issues",
+    "size": 659,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.20030349013657056,
+      "avg_complexity": 2.161608497723824,
+      "avg_text_length": 319.10773899848255,
+      "avg_severity": 0.1456752655538695,
+      "has_image": 1.0
+    },
+    "sample_titles": [
+      "new import page bug - page titles",
+      "feedback has been mispelled as 'feeback'",
+      "swift compiler warnings",
+      "after reinstallation app, @browse cmd not working",
+      "is it possible to reduce the size of viewport"
+    ]
+  },
+  "4": {
+    "name": "Simple Bug Reports",
+    "size": 166,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.0,
+      "avg_complexity": 0.0,
+      "avg_text_length": 55.0,
+      "avg_severity": 0.0,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "first from flow in uk south",
+      "first from flow in uk south",
+      "first from flow in uk south",
+      "first from flow in uk south",
+      "first from flow in uk south"
+    ]
+  },
+  "5": {
+    "name": "User Questions & Help Requests",
+    "size": 535,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 1.0,
+      "avg_complexity": 1.497196261682243,
+      "avg_text_length": 958.2915887850468,
+      "avg_severity": 0.4,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "issue with locale",
+      "did astextnode support set border use convenient way?",
+      "can't build to parent outdir folder with 1.5.4",
+      "@ngtools/webpack v.1.2.6 - not building lazy routes",
+      "divergence at irr values near zero"
+    ]
+  },
+  "6": {
+    "name": "General Issues",
+    "size": 589,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.0,
+      "avg_complexity": 1.529711375212224,
+      "avg_text_length": 399.30899830220716,
+      "avg_severity": 0.008488964346349746,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "broken link to w3schools",
+      "can't install via npm",
+      "remove & replace ical support with dependency on icalendar gem",
+      "row usage in tea section",
+      "update new oss stacks for 5.3.0 and 1.0.6"
+    ]
+  },
+  "7": {
+    "name": "General Issues",
+    "size": 765,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.030065359477124184,
+      "avg_complexity": 1.2679738562091503,
+      "avg_text_length": 361.20392156862744,
+      "avg_severity": 1.1516339869281045,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "iedropone - error for some str vars in if statement",
+      "ability to set timeout for a session",
+      "incoming chunk is broken",
+      "incorrect shopify credentials displays a success message",
+      "not working on wordpress multisite"
+    ]
+  },
+  "8": {
+    "name": "Detailed Technical Reports",
+    "size": 312,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.0,
+      "avg_complexity": 1.4278846153846154,
+      "avg_text_length": 1214.8397435897436,
+      "avg_severity": 0.3333333333333333,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "alt-key with numeric key input 0-9 ignored in vsvim",
+      "request modify base pawn string",
+      "plugins should be required only when used",
+      "skill and status lot of errors.",
+      "cli version to speedup start time / rt-cli branch"
+    ]
+  },
+  "9": {
+    "name": "Complex Technical Issues",
+    "size": 197,
+    "features": {
+      "has_error": 0.07614213197969544,
+      "has_question": 0.23857868020304568,
+      "avg_complexity": 3.9289340101522843,
+      "avg_text_length": 681.3705583756346,
+      "avg_severity": 0.49746192893401014,
+      "has_image": 1.0
+    },
+    "sample_titles": [
+      "build errors on latest version",
+      "nonexistent account/team is not handled",
+      "2 problems help me to debug",
+      "admin update not working properly",
+      "javascript error after refreshing the app"
+    ]
+  },
+  "10": {
+    "name": "Detailed Technical Reports",
+    "size": 125,
+    "features": {
+      "has_error": 0.072,
+      "has_question": 0.04,
+      "avg_complexity": 1.696,
+      "avg_text_length": 404.52,
+      "avg_severity": 0.76,
+      "has_image": 0.008
+    },
+    "sample_titles": [
+      "fix crash in - wbmodelobject dealloc , line 33",
+      "fix crash in cfrelease",
+      "configuration change events and workspace folder changes",
+      "contentinterceptor.java line 126",
+      "fix crash in - wbtimelinetrendcontainerview dealloc , line 112"
+    ]
+  },
+  "11": {
+    "name": "Complex Technical Issues",
+    "size": 234,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.36752136752136755,
+      "avg_complexity": 2.8824786324786325,
+      "avg_text_length": 686.7393162393163,
+      "avg_severity": 0.2222222222222222,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "error in stateless nested component",
+      "ionic build:cordova ios --prod",
+      "kr375 ppt gif does not animate in presentation mode",
+      "idea github bot",
+      "prebid dfp setup with adsense"
+    ]
+  },
+  "12": {
+    "name": "Detailed Technical Reports",
+    "size": 1012,
+    "features": {
+      "has_error": 0.0,
+      "has_question": 0.0,
+      "avg_complexity": 1.0,
+      "avg_text_length": 483.32806324110675,
+      "avg_severity": 0.0,
+      "has_image": 0.0
+    },
+    "sample_titles": [
+      "highlight segment on map when editing speed",
+      "connection setting: socks5 proxy",
+      "evitar o bind do this usando arrow function",
+      "protractor scenario test of identity export/import/revoke",
+      "first-time user post coaching tbd"
+    ]
+  },
+  "13": {
+    "name": "Critical Errors & Crashes",
+    "size": 513,
+    "features": {
+      "has_error": 1.0,
+      "has_question": 0.23391812865497075,
+      "avg_complexity": 3.6578947368421053,
+      "avg_text_length": 491.5633528265107,
+      "avg_severity": 1.304093567251462,
+      "has_image": 0.05263157894736842
+    },
+    "sample_titles": [
+      "how to work with tuples in general?",
+      "'module' object has no attribute 'graphviz_layout' in metergroup, elecmeter, selection and basic statistics",
+      "trying to run remotetask crashes gammarf.py",
+      "caught exception from kitsu's forgecraft forgecraft",
+      "video playback and audio issues playing hls streams"
+    ]
+  },
+  "14": {
+    "name": "Complex Technical Issues",
+    "size": 34,
+    "features": {
+      "has_error": 0.14705882352941177,
+      "has_question": 0.23529411764705882,
+      "avg_complexity": 4.0,
+      "avg_text_length": 660.4117647058823,
+      "avg_severity": 0.23529411764705882,
+      "has_image": 0.3235294117647059
+    },
+    "sample_titles": [
+      "issue 2102: issue 2099: issue 2098: issue 2095: issue 2094: issue 2091: issue 2090: issue 2087: issue 2085: issue 2084: issue 2081: issue 2080: issue 2077: issue 2076: issue 2073: issue 2072: issue 2069: issue 2068: issue 2066: issue 2063: issue 2062: issu",
+      "penguin 4.0 recovery case studies - via @marie_haynes https://t.co/nvtcpayvwa https://t.co/lcpwapa0mi",
+      "settings dashboard won't work on lemp stack",
+      "issue 2753: issue 2752: issue 2750: issue 2747: issue 2746: issue 2743: issue 2742: issue 2739: issue 2738: issue 2735: issue 2734: issue 2731: issue 2730: issue 2728: issue 2725: issue 2724: issue 2721: issue 2719: issue 2718: issue 2715: issue 2713: issu",
+      "kids learning colors with farting baby | learn colours | funny kids learning videos"
+    ]
+  }
+}

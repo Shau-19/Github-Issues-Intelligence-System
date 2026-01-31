@@ -1,0 +1,68 @@
+{
+  "General Issues": {
+    "cluster": "General Issues",
+    "size": 765,
+    "root_cause": "The root cause pattern of these issues appears to be a combination of coding errors, configuration problems, and compatibility issues, which are leading to errors, incorrect behavior, and unexpected successes in various scenarios. To address these issues, it is recommended to investigate each problem thoroughly, starting with a review of the code and configuration settings, and then fix the underlying causes, potentially automating tests to prevent similar issues from",
+    "samples": [
+      "iedropone - error for some str vars in if statement",
+      "ability to set timeout for a session",
+      "incoming chunk is broken"
+    ],
+    "features": "1.2 severity"
+  },
+  "Critical Errors & Crashes": {
+    "cluster": "Critical Errors & Crashes",
+    "size": 513,
+    "root_cause": "The root cause pattern of these critical errors and crashes appears to be related to issues with module imports, attribute access, and compatibility problems with specific libraries or frameworks, such as graphviz, remotetask, and kitsu's forgecraft. To address these issues, it is recommended to investigate the import statements, library versions, and compatibility, and fix the code to ensure that the required attributes and modules",
+    "samples": [
+      "how to work with tuples in general?",
+      "'module' object has no attribute 'graphviz_layout' in metergroup, elecmeter, selection and basic statistics",
+      "trying to run remotetask crashes gammarf.py"
+    ],
+    "features": "1.3 severity"
+  },
+  "User Questions & Help Requests": {
+    "cluster": "User Questions & Help Requests",
+    "size": 535,
+    "root_cause": "The root cause pattern of these issues appears to be related to technical difficulties and compatibility problems with specific software versions, plugins, or configurations, such as locale settings, Astextnode, @ngtools/webpack, and build processes. To address these issues, it is recommended to investigate each problem individually, checking for updates, documentation, and community forums for potential solutions, and potentially automate troubleshooting processes to streamline",
+    "samples": [
+      "issue with locale",
+      "did astextnode support set border use convenient way?",
+      "can't build to parent outdir folder with 1.5.4"
+    ],
+    "features": "0.4 severity"
+  },
+  "Complex Technical Issues": {
+    "cluster": "Complex Technical Issues",
+    "size": 34,
+    "root_cause": "The root cause pattern of the complex technical issues appears to be related to software or system glitches, as evidenced by the numerous issue numbers and the specific problem with the settings dashboard on a LEMP stack, suggesting a need for debugging and troubleshooting. To address these issues, it is recommended to investigate each issue individually, potentially automating the troubleshooting process where possible, and monitoring the systems for similar errors to prevent",
+    "samples": [
+      "issue 2102: issue 2099: issue 2098: issue 2095: issue 2094: issue 2091: issue 2090: issue 2087: issue 2085: issue 2084: issue 2081: issue 2080: issue 2077: issue 2076: issue 2073: issue 2072: issue 2069: issue 2068: issue 2066: issue 2063: issue 2062: issu",
+      "penguin 4.0 recovery case studies - via @marie_haynes https://t.co/nvtcpayvwa https://t.co/lcpwapa0mi",
+      "settings dashboard won't work on lemp stack"
+    ],
+    "features": "0.2 severity"
+  },
+  "Simple Bug Reports": {
+    "cluster": "Simple Bug Reports",
+    "size": 166,
+    "root_cause": "The root cause pattern of these issues appears to be a repetitive error message \"first from flow in uk south\" which suggests a potential configuration or data issue specific to the UK South region. Recommended action is to investigate the configuration and data flow in the UK South region to identify and resolve the underlying cause of this repetitive error message.",
+    "samples": [
+      "first from flow in uk south",
+      "first from flow in uk south",
+      "first from flow in uk south"
+    ],
+    "features": "0.0 severity"
+  },
+  "Detailed Technical Reports": {
+    "cluster": "Detailed Technical Reports",
+    "size": 1012,
+    "root_cause": "The root cause pattern of these issues appears to be related to specific technical configurations, testing scenarios, and user experience features that require detailed attention to resolve, such as proxy settings, binding issues, and test automation. Recommended action is to investigate each issue individually, starting with the most critical ones such as the protractor scenario test and the first-time user post coaching, and then automate or fix them as necessary",
+    "samples": [
+      "highlight segment on map when editing speed",
+      "connection setting: socks5 proxy",
+      "evitar o bind do this usando arrow function"
+    ],
+    "features": "0.0 severity"
+  }
+}

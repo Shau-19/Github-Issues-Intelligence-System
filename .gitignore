@@ -2,33 +2,27 @@
 __pycache__/
 *.py[cod]
 *.so
-.Python
 env/
 venv/
 proj_env/
 
-# Data (will be tracked by DVC)
-/data/*.csv
+# Environment (IMPORTANT!)
+.env
+
+# DVC - Large files
 /data/*.npy
 /data/*.pkl
-/data/*.png
-
-# Models (will be tracked by DVC)
 /models/*.pkl
+.dvc/cache
+.dvc/tmp
 
 # MLflow
 mlruns/
+mlflow.db
 
 # IDE
 .vscode/
 .idea/
-*.swp
 
 # OS
 .DS_Store
-
-# DVC
-/data/.gitignore
-/models/.gitignore
-.dvc/cache
-.dvc/tmp

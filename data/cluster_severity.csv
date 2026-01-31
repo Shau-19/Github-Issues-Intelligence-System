@@ -1,0 +1,7 @@
+cluster_name,severity_score,count
+Critical Errors & Crashes,6.605504587155964,872
+Complex Technical Issues,0.31494661921708184,1124
+Detailed Technical Reports,0.2650103519668737,1449
+General Issues,0.20321100917431192,4360
+User Questions & Help Requests,0.15979899497487438,1990
+Simple Bug Reports,0.0,166
