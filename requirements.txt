@@ -1,0 +1,9 @@
+streamlit==1.53.1
+pandas==2.3.3
+numpy==1.26.4
+plotly==6.5.2
+scikit-learn==1.8.0
+sentence-transformers==5.2.0
+groq==0.36.0
+python-dotenv==1.0.0
+mlflow==3.9.0
