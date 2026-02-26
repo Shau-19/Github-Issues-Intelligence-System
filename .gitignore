@@ -1,3 +1,4 @@
+@"
 # Python
 __pycache__/
 *.py[cod]
@@ -13,6 +14,11 @@ proj_env/
 /data/*.npy
 /data/*.pkl
 /models/*.pkl
+
+# Exception - scaler must be in Git for consistent inference
+!/models/scaler.pkl
+!/models/kmeans_multimodal.pkl
+
 .dvc/cache
 .dvc/tmp
 
@@ -26,3 +32,4 @@ mlflow.db
 
 # OS
 .DS_Store
+"@ | Out-File .gitignore -Encoding UTF8
