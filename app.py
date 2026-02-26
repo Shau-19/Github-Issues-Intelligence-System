@@ -244,17 +244,54 @@ hr {
 
 # ── Inference tools ────────────────────────────────────────────────────────────
 @st.cache_resource
+def _get_hf_embedding(text: str) -> list:
+    """Call HuggingFace Inference API to get 384D embedding.
+    No torch, no sentence-transformers — just an HTTP request."""
+    import requests as _req
+    HF_TOKEN = os.environ.get("HF_TOKEN", "")
+    headers  = {"Authorization": f"Bearer {HF_TOKEN}"} if HF_TOKEN else {}
+    url      = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
+    resp     = _req.post(url, headers=headers, json={"inputs": text}, timeout=15)
+    resp.raise_for_status()
+    result   = resp.json()
+    # API returns list of token embeddings — mean pool to get sentence embedding
+    emb = result[0] if isinstance(result[0], list) else result
+    if isinstance(emb[0], list):
+        import numpy as _np
+        emb = _np.mean(emb, axis=0).tolist()
+    return emb
+
+def _ensure_model():
+    """Download kmeans_multimodal.pkl from Google Drive if not present."""
+    import os as _os
+    model_path = 'models/kmeans_multimodal.pkl'
+    if _os.path.exists(model_path):
+        return
+    gdrive_id = _os.environ.get("KMEANS_GDRIVE_ID", "")
+    if not gdrive_id:
+        raise FileNotFoundError(
+            "models/kmeans_multimodal.pkl not found. "
+            "Set KMEANS_GDRIVE_ID secret in Streamlit Cloud."
+        )
+    import subprocess as _sub
+    _os.makedirs('models', exist_ok=True)
+    _sub.run(
+        ["python", "-m", "gdown", gdrive_id, "-O", model_path],
+        check=True
+    )
+
+@st.cache_resource
 def load_inference_tools():
+    _ensure_model()
     with open('models/kmeans_multimodal.pkl', 'rb') as f:
         km_model = pickle.load(f)
-    from sentence_transformers import SentenceTransformer
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
     # Load the SAME scaler fitted during training — not refitted at inference
     with open('models/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
     with open('data/cluster_analysis.json', 'r') as f:
         cluster_info = json.load(f)
-    return km_model, embedder, scaler, cluster_info
+    # embedder is now the HF API function — no torch needed
+    return km_model, _get_hf_embedding, scaler, cluster_info
 
 # ── Plotly neon theme ──────────────────────────────────────────────────────────
 PLOT_LAYOUT = dict(
@@ -688,14 +725,18 @@ with tab5:
         models_ok = True
     except Exception as e:
         models_ok = False
-        st.error(f"⚠  MODEL FILES NOT FOUND: {e}")
-        st.markdown('''
-        <div style="font-family:'Share Tech Mono',monospace;font-size:0.65rem;
-                    color:#3a6050;letter-spacing:0.1em;line-height:2">
-          REQUIRED FILES:<br>
-          · models/kmeans_multimodal.pkl<br>
-          · data/cleaned_issues_with_features.csv<br>
-          · data/cluster_analysis.json
+        st.markdown(f'''
+        <div style="background:rgba(255,30,30,0.06);border:1px solid rgba(255,30,30,0.3);
+                    border-left:3px solid #ff4444;border-radius:2px;padding:1.2rem 1.5rem;
+                    font-family:'Share Tech Mono',monospace;font-size:0.68rem;
+                    color:#ff8888;letter-spacing:0.1em;line-height:2.2">
+          ⚠ INFERENCE ERROR: {e}<br><br>
+          IF RUNNING ON STREAMLIT CLOUD, SET THESE SECRETS IN APP SETTINGS:<br>
+          · KMEANS_GDRIVE_ID = &lt;your google drive file id for kmeans_multimodal.pkl&gt;<br>
+          · HF_TOKEN = &lt;your huggingface token (optional but recommended)&gt;<br><br>
+          TO FIND YOUR GDRIVE FILE ID:<br>
+          · RIGHT-CLICK kmeans_multimodal.pkl IN GOOGLE DRIVE → SHARE → COPY LINK<br>
+          · THE ID IS THE LONG STRING BETWEEN /d/ AND /view IN THE URL
         </div>
         ''', unsafe_allow_html=True)
 
@@ -744,7 +785,9 @@ with tab5:
                 complexity  = (has_error * 2) + (has_image * 1) + (min(url_count, 5) * 0.5) + (min(kw_severity, 5) * 0.5) + (1 if text_len > 300 else 0)
 
                 # ── 2. Vector creation ──
-                text_emb     = embedder.encode([full_text])
+                # embedder is now _get_hf_embedding (HF API, no torch)
+                _raw_emb = embedder(full_text)
+                text_emb = np.array(_raw_emb).reshape(1, -1)
                 meta_arr     = np.array([[has_image, has_error, has_question, url_count,
                                           text_len, kw_severity, user_weight, complexity]])
                 meta_scaled  = scaler.transform(meta_arr)
