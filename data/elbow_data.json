@@ -1,0 +1,92 @@
+[
+  {
+    "k": 3,
+    "inertia": 56411.3,
+    "silhouette": 0.4139
+  },
+  {
+    "k": 4,
+    "inertia": 47934.9,
+    "silhouette": 0.2941
+  },
+  {
+    "k": 5,
+    "inertia": 39333.1,
+    "silhouette": 0.335
+  },
+  {
+    "k": 6,
+    "inertia": 35003.2,
+    "silhouette": 0.3371
+  },
+  {
+    "k": 7,
+    "inertia": 32263.8,
+    "silhouette": 0.335
+  },
+  {
+    "k": 8,
+    "inertia": 30506.5,
+    "silhouette": 0.3179
+  },
+  {
+    "k": 9,
+    "inertia": 28590.7,
+    "silhouette": 0.2445
+  },
+  {
+    "k": 10,
+    "inertia": 27434.4,
+    "silhouette": 0.3194
+  },
+  {
+    "k": 11,
+    "inertia": 26162.5,
+    "silhouette": 0.2371
+  },
+  {
+    "k": 12,
+    "inertia": 25132.5,
+    "silhouette": 0.2469
+  },
+  {
+    "k": 13,
+    "inertia": 24093.0,
+    "silhouette": 0.2502
+  },
+  {
+    "k": 14,
+    "inertia": 23304.5,
+    "silhouette": 0.2404
+  },
+  {
+    "k": 15,
+    "inertia": 22768.3,
+    "silhouette": 0.2395
+  },
+  {
+    "k": 16,
+    "inertia": 21996.6,
+    "silhouette": 0.2374
+  },
+  {
+    "k": 17,
+    "inertia": 21353.7,
+    "silhouette": 0.2363
+  },
+  {
+    "k": 18,
+    "inertia": 21046.8,
+    "silhouette": 0.2153
+  },
+  {
+    "k": 19,
+    "inertia": 20337.1,
+    "silhouette": 0.2293
+  },
+  {
+    "k": 20,
+    "inertia": 20162.2,
+    "silhouette": 0.2145
+  }
+]
