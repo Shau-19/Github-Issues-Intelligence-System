@@ -67,7 +67,7 @@ echo "GROQ_API_KEY=your_key_here" > .env
 streamlit run app.py
 ```
 
-Visit **http://localhost:8501**
+Visit **https://git-issue-clustering.streamlit.app/** for a demo(Might take a little time to wake up)
 
 ---
 
